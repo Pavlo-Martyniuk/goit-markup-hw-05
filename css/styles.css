@@ -164,6 +164,7 @@ a {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .hero-container {
@@ -464,6 +465,7 @@ a {
 .footer-block-list {
   display: flex;
   gap: 16px;
+  
 }
 .footer-block-svg {
   fill: #f4f4fd;
@@ -634,3 +636,72 @@ text-decoration-line: underline;
 	border: none;
 	fill: #fff;
 }
+
+.footer-form {
+	display: flex;
+	gap: 24px;
+}
+.footer-form-box{
+	margin-left: 80px;
+	
+}
+.footer-form-description{
+	color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+
+.input-email{
+	font-family: inherit;
+	width: 264px;
+	height: 40px;
+	background-color: transparent;
+	border-radius: 4px;
+	border: 1px solid #FFF;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+	padding: 8px 16px;
+	outline: none;
+}
+
+.footer-button{
+	display: block;
+	min-width: 117px;
+	padding: 8px 24px;
+}
+
+.footer-button{
+display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background: #4D5AE5;
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    min-width: 165px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-sub-svg{
+	fill: #FFF;
+}
+
+.footer-button:focus, .footer-button:hover {
+	background-color: #404BBF; }
