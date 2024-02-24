@@ -483,7 +483,7 @@ a {
 }
 
 .modal {
-	
+	padding: 72px 24px 24px;
 	width: 408px;
 	min-height: 584px;
 background-color: #FCFCFC;
@@ -491,7 +491,9 @@ box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0
 position: absolute;
 top: 50%;
 left: 50%;
- transform: translate(-50%, -50%);
+border-radius: 4px;
+ transform: translate(-50%, -50%) scale(1);
+ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .backdrop {
@@ -506,12 +508,7 @@ left: 50%;
 	pointer-events: auto;
 }
 
-.modal {
-	border-radius: 4px;
-	background: #FCFCFC;
-	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-	padding: 72px 24px 24px;
-}
+
 
 .modal-close{
 	background-color: #E7E9FC;
@@ -537,8 +534,8 @@ left: 50%;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: 1.5;
-    margin-bottom: 1em;
+    letter-spacing: 0.32px;
+	 margin-bottom: 16px;
 }
 
 .modal-form{
@@ -546,7 +543,7 @@ left: 50%;
 }
 
 .modal-field{
-	margin-bottom: 26px;
+	margin-bottom: 8px;
 }
 
 .modal-input {
@@ -614,9 +611,22 @@ display: flex;
 align-items: center;
 
 }
+
+.check_icon{
+	position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .check-text a {
 	color: #4D5AE5;
-text-decoration-line: underline;
+	font-family: Roboto,sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 16px;
+	letter-spacing: 0.48px;
+	text-decoration-line: underline
 }
 .check-text span {
 	width: 16px;
@@ -706,3 +716,39 @@ display: inline-flex;
 
 .footer-button:focus, .footer-button:hover {
 	background-color: #404BBF; }
+
+.modal-field-textrea{
+  margin-bottom: 16px;
+}
+
+.modal-field-checkbox{
+ margin-bottom: 24px;
+}
+
+.modal-field-submit {
+	display: block;
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	background-color: #4D5AE5;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+	color: #FFF;
+	text-align: center;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.64px;
+	min-width: 169px;
+	height: 56px;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-field-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.model_button:focus, .model_button:hover {
+	background-color: #404BBF; 
+}
+	
+	
