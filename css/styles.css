@@ -701,6 +701,7 @@ display: inline-flex;
 }
 .footer-sub-svg{
 	fill: #FFF;
+	margin-left: 16px;
 }
 
 .footer-button:focus, .footer-button:hover {
